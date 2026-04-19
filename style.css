@@ -1,0 +1,155 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #ccc;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Cool underline animation */
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+section {
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,255,255,0.3);
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 10px;
+    color: cyan;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: cyan;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+}
+
+/* Project box */
+.project-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    background: cyan;
+    color: black;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    background: cyan;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.6);
+}
+    
